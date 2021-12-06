@@ -1,7 +1,16 @@
 # Project: Hotsite Inspira
 # Desenvolvedor: Igor Fernandes Barreto
 
-O projeto foi construído para atender as necessidades comerciais da Internit
+
+<pre>
+- O projeto foi construído para atender as necessidades comerciais da Internit.
+</pre>
+
+## Apresentação:
+<img src="./screenshot.jpg" alt="screenshot">
+
+- Link do projeto: https://inspiraresidencial.com.br
+
 
 
 ## 🔗 Grade de conteúdos:
