@@ -1,0 +1,13 @@
+.inspira_development-btn{
+    margin-top: 10%;
+    a, button{
+        background-color: #3B413E;
+        color: #fff;
+        font-size: .8rem;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        @include mq("lg", max){
+            font-size: .5rem;
+        }
+    }
+}

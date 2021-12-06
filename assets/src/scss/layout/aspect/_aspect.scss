@@ -1,0 +1,145 @@
+section{
+    &:nth-of-type(2){
+        .inspira{
+            &_development{
+                &-bloc{
+                    width: 30%;
+                    background-color: #E5E5E5;
+                    text-align: center;
+                    padding: 1.5rem 2rem;
+                    margin: 6% auto 5%;
+                    @include mq("xl", max){
+                        width: 35%;
+                    }
+                    @include mq("lg", max){
+                        width: 47%;
+                    }
+                    @include mq("sm", max){
+                        width: 100%;
+                        padding: 2.5rem 1.4rem;
+                        line-height: 2;
+                        margin-bottom: 25%;
+                    }
+                    p{
+                        letter-spacing: .1rem;
+                        margin: 0;
+                        br{
+                            @include mq("sm", max){
+                                display: none;
+
+                            }
+                        }
+                    }
+                }
+                &-title{
+                    margin: 0;
+                    @include mq("lg", max){
+                        display: none;
+                    }
+                }
+                &-squad{
+                    &-top, &-bottom{
+                        position: relative;
+                        background-color: #E5E5E5;
+                        &::after, &::before{
+                            content: " ";
+                            position: absolute;
+                            height: 8rem;
+                            width: 8rem;
+                            background-color: #C4C0A6;
+                            z-index: -1;
+                        }
+                    }
+                    &-top{
+                        &::after{
+                            top: -.8rem;
+                            right:  -.8rem; 
+                        }
+                    }
+                    &-bottom{
+                        &::before{
+                            bottom: -.8rem;
+                            left:  -.8rem;
+                        }
+                    }
+                }
+                &-video{
+                    position: relative;
+                    width: 90%;
+                    text-align: center;
+                    margin: 0 auto;
+                    @include mq("sm", max){
+                        width: 100%;
+                    }
+                    &-iframe{
+                        iframe{
+                            width: 100%;
+                            height: 65vh;
+                            max-height: 470px;
+                            @include mq("lg", max){
+                                height: 40vw;
+                            }
+                            @include mq("sm", max){
+                                height: 51vw;
+                            }
+                        }
+                    }
+                    &-img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        transition: opacity .5s ease-in-out;
+                        &-btn{
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            .video-btn{
+                                width: 130px;
+                                height: 130px;
+                                cursor: pointer;
+                                margin: 0 auto;
+                                @include mq("sm", max){
+                                    width: 110px;
+                                    height: 110px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-icons{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: 7% 0;
+                    @include mq("sm", max){
+                        margin: 12% 0;
+                    }
+                   &-item{
+                        width: 20%;
+                        text-align: center;
+                        margin: 2.5% 0;
+                        @include mq("sm", max){
+                            width: 50%;
+                        }
+                        &-img{
+                            margin-bottom: 6%;
+                            svg{
+                                height: 45px;
+                            }
+                        }
+                        &-text{
+                            p{
+                                text-transform: uppercase;
+                            }
+                        }
+                   }
+                }
+            }
+        }
+    }
+}

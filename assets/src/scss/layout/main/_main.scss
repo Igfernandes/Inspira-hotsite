@@ -1,0 +1,109 @@
+main{
+    .inspira{
+        background: url(../../src/img/Img_Fundo.jpg) no-repeat ;
+        background-size: cover;
+        position: relative;
+        @include mq("sm", max){
+            background: none;
+        }
+        .background-filter{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #00000091;
+            opacity: 0;
+            animation: opacity 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            @include mq("sm", max){
+                animation: none;
+            }
+        }
+        &_content{
+            &-img{
+                height: 70vh;
+                @include mq("sm"){
+                    display: none;
+                }
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
+        &_development{
+            &-bloc{
+                display: flex;
+                align-items: center;
+                height: 100vh;
+                opacity: 0;
+                animation: opacity 1s;
+                animation-delay: 4s;
+                animation-fill-mode: forwards;
+                @include mq("sm", max){
+                    height: 30vh;
+                    background: url(../../src/img/bg-footer.jpg) no-repeat center center;
+                    background-size: cover;
+                    opacity: 1;
+                    animation: none;
+                }
+            }
+            &-scroll{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                @include mq("sm", max){
+                    top: -25%;
+                    bottom: auto;
+                }
+                &-icon{
+                    text-align: center;
+                    svg{
+                        animation: internitShake .5s ease-in-out;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: infinite;
+                        animation-fill-mode: forwards;
+                        animation-direction: alternate-reverse;
+                    }
+                }
+            }
+            &-logo{
+                padding: 1% 15%;
+            }
+            &-subtitle{
+                text-align: center;
+                margin-top: 0%;
+                p{
+                    font-size: 1.5rem;
+                    color: $themeSecondColor;
+                    @include mq("sm", max){
+                        font-size: .8rem;
+                    }
+                }
+            }
+            &-text{
+                text-align: center;
+                margin-top: 5%;
+                @include mq("sm", max){
+                    padding: 0 19%;
+                }
+                p,span{
+                    font-size: 1.5rem;
+                    color: $themeSecondColor;
+                    @include mq("sm", max){
+                        font-size: 1.3rem;
+                    }
+                    strong{
+                        font-weight: 500;
+                        color: $themeSecondColor;
+                        @include mq("sm", max){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

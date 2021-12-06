@@ -1,0 +1,62 @@
+//animations
+@import './animations/animations.scss';
+
+//TOOLS
+@import '../../../tools/normalize.css';
+@import './tools/mixis.scss';
+
+//SETTINGS
+@import './settings/settings.scss';
+
+//BOOTSTRAP
+@import './libary/bootstrap/bootstrap.scss';
+@import './libary/bootstrap/bootstrap-reboot.scss';
+@import './libary/bootstrap/bootstrap-grid.scss';
+
+//SWIPER
+@import './libary/swiper/swiper.scss';
+@import '../../dist/css/swiper-bundle.min.css';
+
+//INPUTTELL
+@import '../../dist/css/intlTelInput.min.css';
+
+//LIGHTBOX
+@import '../../src/lightbox/global.css';
+
+//COMPONENTES
+@import './components/components';
+
+//COOKIE
+@import './cookie/cookie.scss';
+
+//HEADER
+@import './layout/globals/header/header';
+
+//MAIN
+@import './layout/main/_main';
+
+//PRESENTATION
+@import './layout/presentation/_presentation.scss';
+
+//ASPECT
+@import './layout/aspect/_aspect.scss';
+
+//GALERY
+@import './layout/gallery/_gallery.scss';
+
+//TOUR
+@import './layout/tour/tour';
+
+//LOCALIZATION
+@import './layout/localization/_localization.scss';
+
+//PLANTA
+@import './layout/plants/plants';
+
+//PARTNERS
+@import './layout/partners/partenrs';
+
+//FOOTER
+@import './layout/globals/footer/footer';
+
+@import './components/modal';

@@ -1,0 +1,91 @@
+/*  
+    GERALS EFECTS
+*/
+
+//ONLY OPACITY
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+//ONLY SCALLE
+@keyframes scale{
+
+    from{
+       transform: scale(1);
+    }to{
+        transform: scale(1.2);
+    }
+}
+
+
+
+//ONLY SCALLE
+@keyframes rotate{
+    from{
+       transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@keyframes internitModShow{
+    from{
+        opacity: 0;
+        transform: translateY(30vh);
+    }to{
+        opacity: 1;
+        transform: translateY(40vh);
+    }
+}
+
+@keyframes internitModHidden{
+    from{
+        opacity: 1;
+        transform: translateY(40vh)
+    }to{
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+}
+
+
+
+@keyframes internitShake{
+    0%{
+        transform: translateY(10px);
+    }50%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

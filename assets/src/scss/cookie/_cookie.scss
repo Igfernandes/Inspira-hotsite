@@ -1,0 +1,44 @@
+cookie{
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 45%;
+    background: #fff;
+    color: #333;
+    opacity: 0;
+    z-index: 99999;
+    transition: opacity .5s ease-in-out;
+    @media screen and (max-width: 550px){
+        left: 0%;
+        width: 100%;
+    }
+    .cookie{
+        &-content{
+            padding: 3%;
+            &-text{
+                font-size: .9rem;
+                a{
+                    color: #333;
+                    text-decoration: none;
+                    &:first-of-type{
+                        text-decoration: underline !important;
+                    }
+                }
+            }
+            .btn-confirm{
+                text-align: center;
+                button{
+                    font-size: .9rem;
+                    color: #ece1cf;
+                    background: #3b413e;
+                    padding: 2% 7%;
+                    border-radius: 2rem;
+                    border: none;
+                    border-radius: .5rem;
+                    outline-style: none;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,71 @@
+section{
+    &:nth-of-type(7){
+        .inspira{
+            &_development{
+                &-img{
+                    width: 20%;
+                    margin: 7% auto 2%;
+                    @include mq("sm", max){
+                        width: 100%;
+                        margin: 25% 0 7%;
+                    }
+                }
+                &-text{
+                    text-align: center;
+                    @include mq("sm", max){
+                        width: 100%;
+                    }
+                    p{
+                        font-weight: 400;
+                        letter-spacing: .1rem;
+                        
+                    }
+                }
+                &-bloc{
+                    margin-top: 7%;
+                    @include mq("lg", max){
+                        margin: 8% 0;
+                    }
+                    @include mq("sm", max){
+                        margin: 15% 0;
+                    }
+                    &:last-of-type{
+                        margin: 7% 0;
+                    }
+                }
+                &-logo{
+                    width: 15%;
+                    margin: 0 auto 2%;
+                    @include mq("lg", max){
+                        width: 30%;
+                    }
+                    @include mq("sm", max){
+                        width: 55%;
+                        margin: 0 auto 9%;
+                    }
+                }
+                &-title{
+                    text-align: center;
+                    p{
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        margin-bottom: 2%;
+                        @include mq("sm", max){
+                            letter-spacing: .2rem;
+                            margin-bottom: 6%;
+                        }
+                    }
+                }
+                &-text{
+                    text-align: center;
+                    width: 70%;
+                    margin: 0 auto 2%;
+                    @include mq("sm", max){
+                        width: 100%;
+                        letter-spacing: 0rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+header{
+    background: url("../../src/img/bg-header.png") center center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: fixed;
+    top: -15vh;
+    width: 100%;
+    z-index: 2;
+    transition: top .5s ease-in-out;
+    &.active{
+        top: 0;
+        & ~ navbar{
+            .inspira{
+                &_development{
+                    &-navbar{
+                        &-visita{
+                            border: 1px solid #c4c0a5;
+                        }
+                        &-btn{
+                            button{
+                                background-color: transparent;
+                                border: 1px solid #c4c0a5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .inspira{
+        &_development{
+            &-logo{
+                padding: 1.5rem 0;
+                @include mq("sm", max){
+                    padding: 2rem 0;
+                }
+                &-img{
+                    width: 22%;
+                    @include mq("sm", max){
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+navbar{
+    position: fixed;
+    top: 2.5%;
+    width: 100%;
+    z-index: 5;
+    .inspira{
+        height: 0;
+        &_development{
+            position: relative;
+            &-column{
+                position: relative;
+            }
+            &-navbar{
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                &-visita{
+                    background-color: #3B413E;
+                    padding: .3rem 2rem .3rem;
+                    border: 1px solid transparent;
+                    border-radius: 2rem;
+                    margin-right: 2%;
+                    transition: all .5s ease-in-out;
+                    @include mq("sm", max){
+                        display: none;
+                    }
+                    a{
+                        color: #c4c0a5;
+                    }
+                }
+                &-btn{
+                    button{
+                        background-color: #3B413E;
+                        padding: .5rem;
+                        border: 1px solid transparent;
+                        transition: all .5s ease-in-out;
+                        @include mq("sm", max){
+                            padding: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

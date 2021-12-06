@@ -1,0 +1,125 @@
+/**
+*   REGISTER FONTS
+**/
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 100;
+    font-style: normal;
+    src: url(./../../src/fonts/Livvic-Thin.ttf) format('TrueType');
+}
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 100;
+    font-style: italic;
+    src: url(./../../src/fonts/Livvic-ThinItalic.ttf) format('TrueType');
+}
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 200;
+    font-style: normal;
+    src: url(./../../src/fonts/Livvic-ExtraLight.ttf) format('TrueType');
+}
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 200;
+    font-style: italic;
+    src: url(./../../src/fonts/Livvic-ExtraLightItalic.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 300;
+    font-style: normal;
+    src: url(./../../src/fonts/Livvic-Light.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 300;
+    font-style: italic;
+    src: url(./../../src/fonts/Livvic-LightItalic.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 400;
+    font-style: normal;
+    src: url(./../../src/fonts/Livvic-Regular.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 500;
+    font-style: normal;
+    src: url(./../../src/fonts/Livvic-Medium.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 500;
+    font-style: italic;
+    src: url(./../../src/fonts/Livvic-MediumItalic.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 600;
+    font-style: normal;
+    src: url(./../../src/fonts/Livvic-SemiBold.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 600;
+    font-style: italic;
+    src: url(./../../src/fonts/Livvic-SemiBoldItalic.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 700;
+    font-style: normal;
+    src: url(./../../src/fonts/Livvic-Bold.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 700;
+    font-style: italic;
+    src: url(./../../src/fonts/Livvic-BoldItalic.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 900;
+    font-style: normal;
+    src: url(./../../src/fonts/Livvic-Black.ttf) format('TrueType');
+}
+
+@font-face{
+    font-family: 'Livvic';
+    font-weight: 900;
+    font-style: italic;
+    src: url(./../../src/fonts/Livvic-BlackItalic.ttf) format('TrueType');
+}
+
+
+/** 
+* FONTS GLOBALS
+**/
+
+$f-sm: .6rem;
+$f-md: .8rem;
+$f-lg: .9rem;
+$f-g: 1.2rem;
+
+
+$font-default: 'Livvic';
+
+
+//CONFIG
+
+*{
+    font-family: $font-default;
+}

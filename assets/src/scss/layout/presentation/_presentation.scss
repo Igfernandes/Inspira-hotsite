@@ -1,0 +1,198 @@
+section{
+    &:first-of-type{
+        .inspira{
+            &_development{
+                &-title{
+                    padding-top: 4%;
+                    @include mq("sm", max){
+                        text-align: center;
+                    }
+                    p{
+                        font-weight: 500;
+                        letter-spacing: .1rem;
+                        @include mq("lg", max){
+                            font-size: .7rem;
+                        }
+                        @include mq("sm", max){
+                            font-size: 1.1rem;
+                            line-height: 1.7;
+                        }
+                    }
+                }
+                &-spacer{
+                    margin: 3rem;
+                    @include mq("lg", max){
+                        margin: 2rem;
+                    }
+                }
+                &-info{
+                    margin-bottom: 1.7rem;
+                    @include mq("sm", max){
+                        text-align: center;
+                    }
+                }
+                &-index{
+                    p{
+                        margin: 0;
+                        @include mq("lg", max){
+                            font-size: .8rem;
+                        }
+                    }
+                }
+                .text{
+                    @include mq("sm", max){
+                        padding: 0 5%;
+                    }
+                    p{
+                        @include mq("lg", max){
+                            font-size: .8rem;
+                        }
+                        @include mq("sm", max){
+                            font-size: .9rem;
+                        }
+                    }
+                }
+                &-btn{
+                    margin-top: 10%;
+                    @include mq("xl", max){
+                        margin-bottom: 12%;
+                    }
+                    @include mq("lg", max){
+                        font-size: .5rem;
+                    }
+                    @include mq("sm", max){
+                        text-align: center;
+                    }
+                   a{
+                       @include mq("sm", max){
+                           display: block;
+                           font-size: .7rem;
+                       }
+                   }
+                }
+                &-squad{
+                    position: relative;
+                    background-color: #E5E5E5;
+                    &::after{
+                        content: " ";
+                        position: absolute;
+                        bottom: 0;
+                        height: 11rem;
+                        width: 11rem;
+                        background-color: #C4C0A6;
+                        transform: translate(-2.5rem, 1.1rem);
+                        z-index: -1;
+                        @include mq("lg", max){
+                            transform: translate(-2.2rem, 0.8rem);
+                        }
+                        @include mq("sm", max){
+                            right: -11.5%;
+                            top: -6%;
+                            bottom: auto;
+                        }
+                    }
+                    &-top{
+                        position: relative;
+                        background-color: #E5E5E5;
+                        @include mq("lg", max){
+                            padding: 1.5rem 3rem;
+                        }
+                        @include mq("sm", max){
+                            width: 95%;
+                        }
+                        &::after{
+                            content: " ";
+                            position: absolute;
+                            top: -.8rem;
+                            left:  -.8rem; 
+                            height: 13rem;
+                            width: 11rem;
+                            background-color: #3B413E;
+                            z-index: -1;
+                            @include mq("sm", max){
+                                width: 19rem;
+                                height: 15rem;
+                            } 
+                        }
+                    }
+                }
+                &-ajust{
+                    position: relative;
+                }
+                &-imgs{
+                    position: absolute;
+                    right: 0;
+                    bottom: .1rem;
+                    width: 52%;
+                    @include mq("xl", max){
+                        width: 50%;
+                    }
+                    @include mq("sm", max){
+                        display: none;
+                    }
+                    img{
+                        height: 45vh;
+                        object-fit: cover;
+                        max-height: 400px;
+                        object-position: 0 -19px;
+                        @include mq("lg", max){
+                            height: 35vh;
+                        }
+                    }
+                }
+                &-bloc{
+                    width: 90%;
+                    background-color: #C4C0A6;
+                    padding: 3rem 5rem;
+                    margin-left: auto;
+                    @include mq("xl", max){
+                        padding: 3rem 3rem;
+                    }
+                    @include mq("sm", max){
+                        width: 95%;
+                    }
+                }
+                &-text{
+                    p{
+                        letter-spacing: .1rem;
+                        font-weight: 500;
+                        @include mq("lg", max){
+                            font-size: .8rem;
+                        }
+                        
+                    }
+                }
+            }
+            &_content{
+                &-img{
+                    width: 72%;
+                    @include mq("xl", max){
+                        width: 76%;
+                    }
+                    @include mq("sm", max){
+                        width: 100%;
+                    }
+                    img{
+                        object-fit: cover;
+                        object-position: left;
+                        max-height: 65vh;
+                        @include mq("xl", max){
+                            max-height: 70vh;
+                        }
+                        @include mq("lg", max){
+                            max-height: 43vw;
+                        }
+                        @include mq("sm", max){
+                            max-height: 100%;
+                        }
+                    }
+                    &:last-of-type{
+                        img{
+                            object-position: top;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,137 @@
+*{
+    color: $themeColor;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $themeThirdColor !important;
+}
+
+a{
+    text-decoration: none !important;
+    &:hover{
+        text-decoration: none !important;
+    }
+}
+
+button{
+    cursor: pointer;
+    &:focus{
+        outline-style: none;
+    }
+    background-color: $themeColor;
+    outline-style: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+p, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+}
+
+input[type="number"]{
+    display: none;
+}
+
+textarea::-webkit-scrollbar{
+    display: none;
+}
+.loading{
+    text-align: center;
+    font-weight: 700;
+}
+
+.modal-show{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #00000040;
+    top: 0;
+}
+.internit_modal-show{
+    animation: internitModShow 1s;
+    animation-fill-mode: forwards;
+}
+
+.internit_modal-hidden{
+    animation: internitModHidden 1s;
+    animation-fill-mode: forwards;
+}
+
+.internit_modal-show, .internit_modal-hidden{
+    width: 30%;
+    margin: 0 auto;
+    .internit_modal-head{
+        text-align: right;
+        background-color: #fff;
+        border-radius: 5px 5px 0 0;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        button{
+            background-color: #fff;
+            border: none;
+            padding: 2%;
+            font-size: 1.5rem;
+            margin-right: 2%;
+            font-weight: 700;
+            outline-style: none;
+            cursor: pointer;
+            visibility: hidden;
+            &:focus{
+                outline-style: none;
+            }
+        }
+    }
+    .internit_modal-body{
+        background-color: #fff;
+        text-align: center;
+        padding: 10% 5% 10%;
+        border-radius: 0 0 .2rem .2rem;
+        p{
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+    }
+}
+.reverse{
+    @include mq("sm", max){
+        flex-direction: column-reverse !important;
+    }
+}
+.infobox{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    &-content{
+        margin-bottom: 8%;
+        @include mq("xl", max){
+            margin-bottom: 0;
+        }
+        @include mq("sm", max){
+            margin-top: 13%;
+        }
+    }
+}
+
+
+/**
+* AJUSTS
+**/
+
+.iti__arrow{
+    border-top: 4px solid $themeSecondColor !important;
+}
+
+.swiper-container-fade{
+    .swiper-slide{
+        opacity: 0 !important;
+        &-active{
+            opacity: 1 !important;
+        }
+    }
+}
+
